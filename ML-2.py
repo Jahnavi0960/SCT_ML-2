@@ -1,15 +1,3 @@
-# 9. GRAPH 2: Simple Regression Visualization (RM vs MEDV)
-# ===============================
-plt.figure()
-plt.scatter(df["RM"], df["MEDV"])
-plt.plot(df["RM"], model.predict(df[["RM", "LSTAT", "PTRATIO", "TAX"]]), linewidth=2)
-plt.xlabel("Average Number of Rooms (RM)")
-plt.ylabel("House Price (MEDV)")
-plt.title("House Price vs Number of Rooms")
-plt.show()
-
-
-
 # Import libraries
 import pandas as pd
 import numpy as np
